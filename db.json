@@ -1,0 +1,25 @@
+{
+  "students": [
+    {
+      "id": 1,
+      "ra": 20250828,
+      "name": "Ana Silva",
+      "email": "ana.silva@example.com",
+      "course": "Sistemas de Informação"
+    },
+    {
+      "id": 2,
+      "ra": 20250827,
+      "name": "Carlos Mendes",
+      "email": "carlos.mendes@example.com",
+      "course": "Engenharia de Software"
+    },
+    {
+      "id": 3,
+      "ra": 20250826,
+      "name": "Mariana Costa",
+      "email": "mariana.costa@example.com",
+      "course": "Ciência da Computação"
+    }
+  ]
+}
