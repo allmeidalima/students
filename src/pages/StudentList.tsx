@@ -10,7 +10,10 @@ const StudentList = () => {
   const [students, setStudents] = useState<StudentModel[]>(studentList);
   const [error, setError] = useState("");
 
+
+  // funcao que aceita dois argumentos
   useEffect(() => {
+    //1. O que ele vai fazer
     getStudents()
     .then(
       data => setStudents(data)
@@ -23,7 +26,13 @@ const StudentList = () => {
         setError(erro);
       }
     )
-  }, []);
+  }, [/** 2. Quando fazer (as dependencias) */]);
+
+  useEffect(() => {
+    //1. O que ele vai fazer
+    console.log('Componente renderizado')!
+  });
+
 
   console.log("Alunos: ", students);
 
