@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { LuChevronLeft, LuChevronRight } from "react-icons/lu";
 import type { StudentModel } from "../../types/StudentModel";
+import EditStudent from "../StudentComponentEdit";
 
 const StudentComponentList = ({ list }: { list: StudentModel[] }) => {
   return (
@@ -36,6 +37,9 @@ const StudentComponentList = ({ list }: { list: StudentModel[] }) => {
                 <Table.Cell>{student.name}</Table.Cell>
                 <Table.Cell>{student.email}</Table.Cell>
                 <Table.Cell textAlign="end">{student.course}</Table.Cell>
+                <Table.Cell textAlign="end">
+                  <EditStudent studentModel={student}  />
+                </Table.Cell>
               </Table.Row>
             ))}
           </Table.Body>
